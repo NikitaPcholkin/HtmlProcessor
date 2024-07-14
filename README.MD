@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 ## Add the dependency
 ```groovy
 dependencies {
-    implementation("com.github.timscriptov:android-apktool:Tag")
+    implementation 'com.github.NikitaPcholkin:HtmlProcessor:1.0'
 }
 ```
 # Usage
