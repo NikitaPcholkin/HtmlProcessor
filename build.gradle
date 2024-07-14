@@ -1,32 +1,16 @@
 plugins {
     id 'java'
     id 'java-library'
-    id 'maven-publish'
 }
 
 group = 'io.pcholkin.processor'
 version = '1.0.1'
-wrapper {
-    gradleVersion = "7.3.3"
-    distributionType = Wrapper.DistributionType.ALL
-}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
     withSourcesJar()
     withJavadocJar()
-}
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-
-        }
-    }
-    repositories {
-        mavenLocal()
-    }
 }
 
 dependencies {
