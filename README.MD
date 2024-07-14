@@ -8,23 +8,6 @@
 | ![code](/ART/code.png) | ![result](/ART/result.png) |
 |------------------------|----------------------------|
 
-## Add it in your root build.gradle at the end of repositories:
-```groovy
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
-    }
-}
-```
-
-## Add the dependency
-```groovy
-dependencies {
-    implementation 'com.github.NikitaPcholkin:HtmlProcessor:1.0'
-}
-```
 # Usage
 ## Add import in your class
 
