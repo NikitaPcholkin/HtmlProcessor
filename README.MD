@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 ## Add the dependency
 ```groovy
 dependencies {
-    implementation 'com.github.NikitaPcholkin:HtmlProcessor:Tag'
+    implementation 'com.github.NikitaPcholkin:HtmlProcessor:1.0'
 }
 ```
 # Usage
