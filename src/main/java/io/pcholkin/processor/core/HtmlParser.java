@@ -1,4 +1,4 @@
-package io.pcholkin.pagescrapper.core;
+package io.pcholkin.processor.core;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

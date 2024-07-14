@@ -1,4 +1,4 @@
-package io.pcholkin.pagescrapper.core;
+package io.pcholkin.processor.core;
 
 import java.io.IOException;
 import java.net.URI;

@@ -1,9 +1,9 @@
-package io.pcholkin.pagescrapper;
+package io.pcholkin.processor;
 
-import io.pcholkin.pagescrapper.core.HtmlFetcher;
-import io.pcholkin.pagescrapper.core.HtmlParser;
-import io.pcholkin.pagescrapper.types.HtmlSaver;
-import io.pcholkin.pagescrapper.types.UrlValidator;
+import io.pcholkin.processor.core.HtmlFetcher;
+import io.pcholkin.processor.core.HtmlParser;
+import io.pcholkin.processor.types.HtmlSaver;
+import io.pcholkin.processor.types.UrlValidator;
 
 import javax.script.ScriptException;
 import java.io.IOException;

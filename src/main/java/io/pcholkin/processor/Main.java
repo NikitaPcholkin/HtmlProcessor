@@ -1,4 +1,4 @@
-package io.pcholkin.pagescrapper;
+package io.pcholkin.processor;
 
 import javax.script.ScriptException;
 import java.io.IOException;

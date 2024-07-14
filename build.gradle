@@ -1,8 +1,9 @@
 plugins {
     id 'java-library'
+    id 'maven-publish'
 }
 
-group = 'io.pcholkin.pagescrapper'
+group = 'io.pcholkin.processor'
 version = '1.0'
 
 java {
@@ -12,6 +13,18 @@ java {
     withJavadocJar()
 }
 
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.java
+                groupId = 'io.pcholkin'
+                artifactId = 'processor'
+                version = "1.0.0"
+            }
+        }
+    }
+}
 dependencies {
     implementation 'org.jsoup:jsoup:1.15.3'
     implementation 'org.apache.httpcomponents:httpclient:4.5.13'

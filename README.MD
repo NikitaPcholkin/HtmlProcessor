@@ -27,8 +27,9 @@ dependencies {
 ```
 # Usage
 ## Add import in your class
+
 ```java
-import io.pcholkin.pagescrapper.HtmlProcessor;
+import io.pcholkin.processor.HtmlProcessor;
 ```
 ## Invoke executor
 ```java

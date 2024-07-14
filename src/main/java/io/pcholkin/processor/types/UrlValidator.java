@@ -1,4 +1,4 @@
-package io.pcholkin.pagescrapper.types;
+package io.pcholkin.processor.types;
 
 import java.net.URI;
 import java.net.URISyntaxException;

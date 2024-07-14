@@ -1,4 +1,4 @@
-package io.pcholkin.pagescrapper.types;
+package io.pcholkin.processor.types;
 
 import org.jsoup.nodes.Document;
 
