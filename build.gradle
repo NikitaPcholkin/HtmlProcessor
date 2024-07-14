@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+}
+
+group = 'io.pcholkin.pagescrapper'
+version = '1.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+    withSourcesJar()
+    withJavadocJar()
+}
+
+dependencies {
+    implementation 'org.jsoup:jsoup:1.15.3'
+    implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+}
+
+
+
