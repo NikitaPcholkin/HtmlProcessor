@@ -17,10 +17,10 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
+                groupId = 'io.pcholkin' as Publication
+                artifactId = 'processor' as Publication
+                version = "1.0." as Publication
                 from components.java
-                groupId = 'io.pcholkin'
-                artifactId = 'processor'
-                version = "1.0.0"
             }
         }
     }
