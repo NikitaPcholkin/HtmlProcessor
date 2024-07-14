@@ -1,30 +1,33 @@
 plugins {
+    id 'java'
     id 'java-library'
     id 'maven-publish'
 }
 
 group = 'io.pcholkin.processor'
-version = '1.0'
+version = '1.0.1'
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
     withSourcesJar()
     withJavadocJar()
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                groupId = 'io.pcholkin' as Publication
-                artifactId = 'processor' as Publication
-                version = "1.0." as Publication
-                from components.java
-            }
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId = 'io.pcholkin.processor'
+            artifactId = 'HtmlProcessor'
+            version = '1.0.1'
         }
     }
+    repositories {
+        mavenLocal()
+    }
 }
+
 dependencies {
     implementation 'org.jsoup:jsoup:1.15.3'
     implementation 'org.apache.httpcomponents:httpclient:4.5.13'
